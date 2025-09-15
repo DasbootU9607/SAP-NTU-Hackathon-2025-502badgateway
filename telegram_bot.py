@@ -12,7 +12,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 logger = logging.getLogger(__name__)
 
 # Bot token from BotFather
-BOT_TOKEN = "8427368845:AAFxETlP6UsgeRWyc1eme9VmF6_SByP9GgQ"  # Replace with your actual bot token
+BOT_TOKEN = "REPLACE YOUR TOKEN HERE"  # Replace with your actual bot token
 
 # Conversation states
 SETTING_ROLE, SETTING_INTERESTS, CHATTING = range(3)
