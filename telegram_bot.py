@@ -24,7 +24,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     """Send welcome message and start profile setup."""
     user_id = update.effective_user.id
     welcome_text = """
-    🤖 Welcome to AetherNet! 
+    🤖 Welcome to AIDE – AI-Driven Ecosystems for Young Professionals! 
     I'm your AI professional ecosystem assistant.
     
     Let's set up your profile first so I can provide personalized help.
@@ -124,7 +124,7 @@ async def quick_career(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Send help message."""
     help_text = """
-    🤖 AetherNet Help:
+    🤖 AIDE Help:
     
     /start - Set up your profile
     /onboarding - Ask about onboarding
@@ -170,7 +170,7 @@ def main() -> None:
     application.add_handler(conv_handler)
     
     # Start the Bot
-    print("🤖 AetherNet Telegram Bot is running...")
+    print("🤖 AIDE Telegram Bot is running...")
     application.run_polling()
 
 if __name__ == "__main__":
