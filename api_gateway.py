@@ -3,7 +3,7 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from agents import agents_system
 
-app = FastAPI(title="AetherNet API Gateway")
+app = FastAPI(title="AIDE API Gateway")
 
 class ChatRequest(BaseModel):
     message: str
@@ -22,4 +22,4 @@ async def chat_endpoint(request: ChatRequest):
 
 @app.get("/health")
 async def health_check():
-    return {"status": "healthy", "service": "AetherNet API Gateway"}
+    return {"status": "healthy", "service": "AIDE API Gateway"}
