@@ -21,7 +21,7 @@ except ImportError:
     # Fallback for old version
     from langchain_community.embeddings import OllamaEmbeddings
 
-class AetherNetAgents:
+class AIDEAgents:
     def __init__(self):
         # Initialize the LLM for all agents
         self.llm = Ollama(base_url="http://localhost:11434", model="llama3")
@@ -199,4 +199,4 @@ Career Coach:""",
         return response_data
 
 # Global instance
-agents_system = AetherNetAgents()
+agents_system = AIDEAgents()
