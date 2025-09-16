@@ -5,12 +5,12 @@ import json
 
 def main():
     st.set_page_config(
-        page_title="AetherNet - AI Professional Ecosystem",
+        page_title="AIDE – AI-Driven Ecosystems for Young Professionals",
         page_icon="🤖",
         layout="wide"
     )
     
-    st.title("🤖 AetherNet - Your AI Professional Ecosystem")
+    st.title("🤖 AIDE – AI-Driven Ecosystems for Young Professionals")
     st.write("Welcome! Get personalized help with onboarding, learning, and career development.")
     
     # Initialize session state
@@ -36,7 +36,7 @@ def main():
                 st.success("Profile saved!")
     
     # Main chat interface
-    st.header("💬 Chat with AetherNet")
+    st.header("💬 Chat with AIDE")
     
     # Display chat history
     for message in st.session_state.chat_history:
